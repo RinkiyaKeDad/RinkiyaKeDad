@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+
+	"github.com/mmcdole/gofeed"
 )
 
 func makeReadme(filename string) error {
@@ -20,9 +22,17 @@ func makeReadme(filename string) error {
 	// Make it a string
 	stringContent := string(content)
 
+	fp := gofeed.NewParser()
+	feed, err := fp.ParseURL("https://dev.to/feed/rinkiyakedad")
+	if err != nil {
+		log.Fatalf("error getting feed: %v", err)
+	}
+	// Get the freshest item
+	rssItem := feed
+	fmt.Println(rssItem.FeedType)
 	// Get blog content here and add it to data
-	blog := "Article should be here from dev.to"
-	data := fmt.Sprintf("%s\n\n%s\n", stringContent, blog)
+	//blog := "Article should be here from dev.to"
+	data := fmt.Sprintf("%s\n\n%s\n", stringContent, rssItem)
 
 	// create the file
 	file, err := os.Create(filename)
