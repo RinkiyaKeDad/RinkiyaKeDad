@@ -22,17 +22,22 @@ func makeReadme(filename string) error {
 	// Make it a string
 	stringContent := string(content)
 
+	// Get rss feed from dev.to
 	fp := gofeed.NewParser()
 	feed, err := fp.ParseURL("https://dev.to/feed/rinkiyakedad")
 	if err != nil {
 		log.Fatalf("error getting feed: %v", err)
 	}
-	// Get the freshest item
-	rssItem := feed
-	fmt.Println(rssItem.FeedType)
-	// Get blog content here and add it to data
-	//blog := "Article should be here from dev.to"
-	data := fmt.Sprintf("%s\n\n%s\n", stringContent, rssItem)
+
+	// add latest 5 blogs to a string
+	var blog string
+	for i := 0; i < 5; i++ {
+		blogItem := feed.Items[i]
+		blog += "**[" + blogItem.Title + "](" + blogItem.Link + ")**<br/>"
+	}
+
+	// add blogs to data
+	data := fmt.Sprintf("%s\n\n%s\n", stringContent, blog)
 
 	// create the file
 	file, err := os.Create(filename)
@@ -41,7 +46,7 @@ func makeReadme(filename string) error {
 	}
 	defer file.Close()
 
-	// Bake at n bytes per second until golden brown
+	// write the file
 	_, err = io.WriteString(file, data)
 	if err != nil {
 		return err
