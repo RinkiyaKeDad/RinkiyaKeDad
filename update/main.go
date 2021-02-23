@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/mmcdole/gofeed"
 )
@@ -21,6 +22,8 @@ func makeReadme(filename string) error {
 
 	// Make it a string
 	stringContent := string(content)
+	res := strings.Split(stringContent, "</h4>")
+	stringContent = res[0] + "</h4>"
 
 	// Get rss feed from dev.to
 	fp := gofeed.NewParser()
@@ -31,13 +34,13 @@ func makeReadme(filename string) error {
 
 	// add latest 5 blogs to a string
 	var blog string
+
 	for i := 0; i < 5; i++ {
 		blogItem := feed.Items[i]
-		blog += "**[" + blogItem.Title + "](" + blogItem.Link + ")**<br/>"
+		blog += " **[" + blogItem.Title + "](" + blogItem.Link + ")**<br/> "
 	}
-
 	// add blogs to data
-	data := fmt.Sprintf("%s\n\n%s\n", stringContent, blog)
+	data := fmt.Sprintf("%s\n\n%s\n%s", stringContent, blog, res[1])
 
 	// create the file
 	file, err := os.Create(filename)
