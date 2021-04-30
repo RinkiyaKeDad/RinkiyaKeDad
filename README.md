@@ -1,17 +1,8 @@
-<h1 align='center'>Hello World 👋, I'm <a href="https://arshsharma.netlify.app/">Arsh Sharma</a></h1></br>
+<h1 align='left'>Hello fellow blob of carbon! 👋, I'm <a href="http://rinkiyakedad.github.io/">Arsh Sharma</a></h1></br>
 
-<p align="center">
-👨‍👩‍👧‍👦 Open-Source enthusiast </br>
-💻 Excited about all things tech </br>
-✌🏼 Love to create code, art and music :) </br>
-</p>
+I'm enthusiastic about all (*well almost all*) things tech! I particularly love open source and distributed systems. 
 
-<p align="center">
-<a href="https://twitter.com/RinkiyaKeDad" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="sachin10101998" height="20" width="20" /></a>
-<a href="https://www.linkedin.com/in/arsh4/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="sachin10101998" height="20" width="20" /></a>
-<a href="mailto:arshsharma461@gmail.com"><img align="center" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" /></a>
-<a href="https://www.instagram.com/rinkiya.ke.dad/"><img align="center" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/instagram.svg" /></a>
-<a href="https://medium.com/@rinkiyakedad"><img align="center" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/medium.svg" /></a>
-<a href="https://dev.to/rinkiyakedad"><img align="center" width="26px" src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.2/icons/dev-dot-to.svg" /></a>
-</p>
+I enjoy learning new things and writing about them in my [blogs](http://rinkiyakedad.github.io/tags). If you'd like to see what all I've worked on, you can check out my [GitHub](https://github.com/RinkiyaKeDad) or [LinkedIn](https://www.linkedin.com/in/arsh4/). If you're looking to connect you'll find ways to reach me on [my webiste](http://rinkiyakedad.github.io/) :)
+
+Fun Fact: I may not know how to invert a binary tree in O(N) but I can Google how to do that in O(1) :P
 
