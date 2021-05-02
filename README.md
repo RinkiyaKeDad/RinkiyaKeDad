@@ -2,7 +2,7 @@
 
 I get excited about all (*well almost all*) things tech! I love creating stuff and contributing to open source.
 
-Particularly interested in distributed systems and the development of applications in the cloud-native ecosystem. I also like talking about my experiences and things I learn in my [blogs](http://rinkiyakedad.github.io/tags) and at conferences!
+Particularly interested in distributed systems and building infrastructure tools. I also like talking about my experiences and things I learn in my [blogs](http://rinkiyakedad.github.io/tags) and at conferences!
 
 You can checkout my website to know more: https://arshs.tech 
 
