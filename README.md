@@ -1,8 +1,5 @@
-<h1 align='left'>Hello fellow blob of carbon! 👋 I'm <a href="http://rinkiyakedad.github.io/">Arsh Sharma</a></h1></br>
+<h1 align='left'>Hello there! 👋 I'm <a href="http://rinkiyakedad.github.io/">Arsh</a></h1></br>
 
-I get excited about all (*well almost all*) things tech! I love creating stuff and contributing to open source.
+I’m an open source engineer who is fond of distributed systems and infrastructure-y things. I also love to write [blogs](https://arshsharma.com/archives/) and talk about my work at conferences!
 
-Particularly interested in distributed systems and building infrastructure tools. I also like talking about my experiences and things I learn in my [blogs](http://rinkiyakedad.github.io/tags) and at conferences.
-
-You can checkout my website to know more: https://arshs.tech 
-
+You can checkout my website to know more: https://arshsharma.com/
